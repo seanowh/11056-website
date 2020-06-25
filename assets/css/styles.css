@@ -1,22 +1,29 @@
 body {
     background-color: cadetblue;
-    
+
 }
+
+.wrapper {
+    width: 980px;
+    margin: 20px auto;
+
+}
+
 header {
     background-color: aliceblue;
 }
 
 nav {
     background-color: antiquewhite;
-    
+
 }
 
 main {
     background-color: aquamarine;
-    
+
 }
 
 footer {
     background-color: blueviolet;
-    
+
 }
