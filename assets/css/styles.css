@@ -3,6 +3,27 @@ body {
 
 }
 
+/*Typography*/
+
+p {}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+
+/*Anchors*/
+
+a {}
+
+a:hover {}
+
+a:visited {}
+
+a:active {}
+
 .wrapper {
     width: 980px;
     margin: 20px auto;
@@ -40,6 +61,7 @@ nav ul li a:hover {
 
 main {
     background-color: aquamarine;
+    overflow: auto;
 
 }
 
