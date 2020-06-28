@@ -5,9 +5,18 @@ body {
 
 /*Typography*/
 
+
+
 p {}
 
-h1 {}
+h1,
+h1 a {
+    font-family: 'Poiret One', cursive;
+    font-size: 30pt;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 30px;
+}
 
 h2 {}
 
@@ -16,7 +25,9 @@ h3 {}
 
 /*Anchors*/
 
-a {}
+a {
+    font-family: 'Poiret One', cursive;
+}
 
 a:hover {}
 
@@ -28,23 +39,36 @@ a:active {}
     width: 980px;
     margin: 20px auto;
 
+
+
 }
 
 header {
     background-color: aliceblue;
 }
 
+.hero {
+    min-height: 400px;
+    background-color: fuchsia;
+}
+
 nav {
+    display: inline;
     background-color: antiquewhite;
     margin-top: 20px;
+    min-height: 100px;
 
 }
 
-nav ul {}
+nav ul {
+    float: right;
+}
 
 nav ul li {
-    display: inline;
+    display: list-item;
     margin-right: 10px;
+    margin-top: 15px;
+
 }
 
 nav ul li a {
@@ -52,11 +76,13 @@ nav ul li a {
     padding: 5px;
     color: white;
     text-decoration: none;
+    font-size: 24pt;
 
 }
 
 nav ul li a:hover {
-    background-color: aqua;
+    text-decoration: underline;
+    text-decoration-color: black;
 }
 
 main {
