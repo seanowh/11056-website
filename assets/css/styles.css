@@ -7,12 +7,18 @@ body {
 
 
 
-p {}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin: 10px 0 10px 0;
+}
 
 h1,
 h1 a {
     font-family: 'Poiret One', cursive;
-    font-size: 30pt;
+    font-size: 1.7em;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -21,9 +27,25 @@ h1 a {
 
 }
 
-h2 {}
+h2 {
+    display: inline-block;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.7em;
+    /*    background-color: blueviolet;*/
+    padding: 10px 0px 10px 0px;
+    border-bottom: 2px solid black;
+    margin-left: 5%;
+}
 
-h3 {}
+h3 {
+    display: inline-block;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.7em;
+    /*    background-color: blueviolet;*/
+    padding: 10px 0px 10px 0px;
+    border-bottom: 2px solid black;
+    margin-left: 55%;
+}
 
 
 /*Anchors*/
@@ -109,10 +131,36 @@ nav ul li a:hover {
 main {
     background-color: aquamarine;
     overflow: auto;
+    padding-top: 30px;
 
 }
 
-footer {
-    background-color: blueviolet;
+.textleft {
+    /*    background-color: chartreuse;*/
+    margin-left: 5%;
+    width: 40%;
+    padding-right: 5%;
+    border-right: 0.5px solid black;
+    margin-bottom: 60px;
+}
 
+.textright {
+    /*    background-color: darkcyan;*/
+    margin-left: 50%;
+    width: 40%;
+    padding-left: 5%;
+    border-left: 0.5px solid black;
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: rgb(240, 240, 240);
+    min-height: 200px;
+    text-align: center;
+    border-top: 2mm ridge rgb(125, 125, 125, .6);
+
+}
+
+footer p {
+    padding-top: 50px;
 }
