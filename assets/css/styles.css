@@ -15,7 +15,10 @@ h1 a {
     font-size: 30pt;
     text-decoration: none;
     text-transform: uppercase;
-    margin: 30px;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #fff;
+
 }
 
 h2 {}
@@ -31,52 +34,70 @@ a {
 
 a:hover {}
 
-a:visited {}
+a:visited {
+    color: black;
+}
 
 a:active {}
 
 .wrapper {
-    width: 980px;
-    margin: 20px auto;
+    width: 100%;
+    /*    margin: 20px auto;*/
 
 
 
 }
 
 header {
-    background-color: aliceblue;
+    background-color: white;
+    min-height: 80px;
 }
 
 .hero {
-    min-height: 400px;
-    background-color: fuchsia;
+    min-height: 600px;
+    background-image: url(../images/churchill-house-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /*    background-color: fuchsia;*/
+
+
 }
 
 nav {
     display: inline;
     background-color: antiquewhite;
-    margin-top: 20px;
+    /*    margin-top: 20px;*/
     min-height: 100px;
 
 }
 
 nav ul {
+    position: fixed;
     float: right;
+    margin-top: 20px;
+    margin-left: 80%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: rgba(128, 128, 128, 0.8);
+
+
 }
 
 nav ul li {
     display: list-item;
-    margin-right: 10px;
-    margin-top: 15px;
+    margin-right: 30px;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
 
 }
 
 nav ul li a {
-    background-color: chartreuse;
+    /*    background-color: chartreuse;*/
     padding: 5px;
     color: white;
     text-decoration: none;
     font-size: 24pt;
+
 
 }
 
