@@ -1,5 +1,5 @@
 body {
-    background-color: cadetblue;
+    /*    background-color: cadetblue;*/
 
 }
 
@@ -7,7 +7,8 @@ body {
 
 
 
-p {
+p,
+.textright ul {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
@@ -118,7 +119,7 @@ nav ul li a {
     padding: 5px;
     color: white;
     text-decoration: none;
-    font-size: 24pt;
+    font-size: 1.2em;
 
 
 }
@@ -129,31 +130,73 @@ nav ul li a:hover {
 }
 
 main {
-    background-color: aquamarine;
+    /*    background-color: aquamarine;*/
     overflow: auto;
     padding-top: 30px;
 
 }
 
+
+/* 1. START where the text is on the left and image on the right */
 .textleft {
     /*    background-color: chartreuse;*/
-    margin-left: 5%;
-    width: 40%;
-    padding-right: 5%;
-    border-right: 0.5px solid black;
+    padding-left: 5%;
     margin-bottom: 60px;
+    float: left;
+    display: inline;
 }
 
+.textleft p {
+    border-right: 0.5px solid black;
+    max-width: 45%;
+    padding-right: 5%
+}
+
+.imgright {
+    /*    display: inline;*/
+
+
+}
+
+.imgright img {
+    float: right;
+    padding-right: 5%;
+    max-width: 40%;
+    margin-top: 20px;
+}
+
+/*1. END*/
+
+
+/*2. START where the text is right and image is left*/
 .textright {
-    /*    background-color: darkcyan;*/
-    margin-left: 50%;
-    width: 40%;
-    padding-left: 5%;
+    background-color: chartreuse;
+    float: none;
+}
+
+.textright p,
+.textright ul {
+
+    float: right;
+    padding-left: 2.5%;
     border-left: 0.5px solid black;
-    margin-bottom: 60px;
+    max-width: 45%;
+    /*    background-color: darkcyan;*/
+
+
+
+}
+
+.imgleft img {
+    float: left;
+    padding-left: 10%;
+    max-width: 45%;
+    margin-top: 20px;
+
 }
 
 footer {
+    margin-top: 60px;
     background-color: rgb(240, 240, 240);
     min-height: 200px;
     text-align: center;
