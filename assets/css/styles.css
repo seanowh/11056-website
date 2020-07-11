@@ -139,62 +139,50 @@ main {
 
 /* 1. START where the text is on the left and image on the right */
 .textleft {
-    /*    background-color: chartreuse;*/
-    padding-left: 5%;
-    margin-bottom: 60px;
-    float: left;
-    display: inline;
+    /*    margin-bottom: 60px;*/
+    /*    float: left;*/
+    /*    display: inline;*/
 }
 
 .textleft p {
-    border-right: 0.5px solid black;
+
+    float: left;
     max-width: 45%;
-    padding-right: 5%
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
-.imgright {
-    /*    display: inline;*/
-
-
-}
+.imgright {}
 
 .imgright img {
-    float: right;
     padding-right: 5%;
     max-width: 40%;
-    margin-top: 20px;
+
 }
 
 /*1. END*/
 
 
 /*2. START where the text is right and image is left*/
-.textright {
-    background-color: chartreuse;
-    float: none;
-}
 
 .textright p,
 .textright ul {
-
+    clear: right;
     float: right;
     padding-left: 2.5%;
-    border-left: 0.5px solid black;
-    max-width: 45%;
-    /*    background-color: darkcyan;*/
-
+    margin-right: 5%;
+    max-width: 40%;
 
 
 }
 
 .imgleft img {
     float: left;
-    padding-left: 10%;
-    max-width: 45%;
-    margin-top: 20px;
-
+    padding-left: 5%;
+    max-width: 40%;
 }
 
+/*2. END  */
 footer {
     margin-top: 60px;
     background-color: rgb(240, 240, 240);
@@ -204,6 +192,69 @@ footer {
 
 }
 
+
+
 footer p {
     padding-top: 50px;
 }
+
+@media only screen and (max-width: 800px) {
+
+    p,
+    .textright ul {
+        font-size: 1em;
+    }
+
+    h3 {
+        margin-left: 5%;
+    }
+
+    .textleft p {
+        max-width: 90%;
+    }
+
+    .imgright img {
+        float: none;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    .textright p,
+    .textright ul {
+        max-width: 90%;
+    }
+
+
+    .imgleft img {
+        float: none;
+        padding-top: 20px;
+        margin-left: 25%;
+
+
+        @media only screen and (max-width: 600px) {
+
+
+            p,
+            .textright ul {
+                font-size: 0.8em;
+            }
+
+            .textleft p {
+                max-width: 90%;
+            }
+
+            .imgright img {
+                float: none;
+                max-width: 90%;
+            }
+
+            .textright p,
+            .textright ul {
+                max-width: 90%;
+            }
+
+            .imgleft img {
+                float: none;
+                max-width: 90%;
+            }
+        }
