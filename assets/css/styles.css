@@ -8,7 +8,8 @@ body {
 
 
 p,
-.textright ul {
+.textright ul,
+.textleft ul {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
@@ -17,7 +18,8 @@ p,
 }
 
 h1,
-h1 a {
+h1 a,
+h1 a:visited {
     font-family: 'Poiret One', cursive;
     font-size: 1.7em;
     text-decoration: none;
@@ -25,6 +27,7 @@ h1 a {
     text-align: center;
     padding-top: 30px;
     background-color: #fff;
+    color: black;
 
 }
 
@@ -58,7 +61,7 @@ a {
 a:hover {}
 
 a:visited {
-    color: black;
+    color: white;
 }
 
 a:active {}
@@ -86,6 +89,8 @@ header {
 
 
 }
+
+/*NAV START*/
 
 nav {
     display: inline;
@@ -129,6 +134,8 @@ nav ul li a:hover {
     text-decoration-color: black;
 }
 
+/*NAV END*/
+
 main {
     /*    background-color: aquamarine;*/
     overflow: auto;
@@ -138,13 +145,11 @@ main {
 
 
 /* 1. START where the text is on the left and image on the right */
-.textleft {
-    /*    margin-bottom: 60px;*/
-    /*    float: left;*/
-    /*    display: inline;*/
-}
 
-.textleft p {
+
+
+.textleft p,
+.textleft ul {
 
     float: left;
     max-width: 45%;
@@ -152,7 +157,17 @@ main {
     padding-left: 5%;
 }
 
-.imgright {}
+h4 {
+    clear: left;
+    float: left;
+    width: 45%;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.4em;
+    background-color: #f1f1f1;
+    padding: 10px 0px 10px 0px;
+    margin-left: 5%;
+
+}
 
 .imgright img {
     padding-right: 5%;
@@ -201,7 +216,8 @@ footer p {
 @media only screen and (max-width: 800px) {
 
     p,
-    .textright ul {
+    .textright ul,
+    .textleft ul {
         font-size: 1em;
     }
 
@@ -209,7 +225,8 @@ footer p {
         margin-left: 5%;
     }
 
-    .textleft p {
+    .textleft p,
+    .textleft ul {
         max-width: 90%;
     }
 
@@ -229,32 +246,40 @@ footer p {
         float: none;
         padding-top: 20px;
         margin-left: 25%;
+    }
 
 
-        @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
 
-
-            p,
-            .textright ul {
-                font-size: 0.8em;
-            }
-
-            .textleft p {
-                max-width: 90%;
-            }
-
-            .imgright img {
-                float: none;
-                max-width: 90%;
-            }
-
-            .textright p,
-            .textright ul {
-                max-width: 90%;
-            }
-
-            .imgleft img {
-                float: none;
-                max-width: 90%;
-            }
+        .textleft h4 {
+            margin: 0%;
+            background-color: #f1f1f1;
+            width: 100%;
+            text-align: center;
         }
+
+        p,
+        .textright ul {
+            font-size: 0.8em;
+        }
+
+        .textleft p {
+            max-width: 90%;
+        }
+
+        .imgright img {
+            float: none;
+            max-width: 90%;
+        }
+
+        .textright p,
+        .textright ul {
+            max-width: 90%;
+        }
+
+        .imgleft img {
+            margin-left: 5%;
+            float: none;
+            max-width: 90%;
+        }
+    }
