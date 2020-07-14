@@ -31,8 +31,12 @@ h1 a:visited {
 
 }
 
+
+
 h2 {
-    display: inline-block;
+    clear: both;
+    float: left;
+    display: block;
     font-family: 'Poiret One', cursive;
     font-size: 1.7em;
     /*    background-color: blueviolet;*/
@@ -43,14 +47,20 @@ h2 {
 
 h3 {
     display: inline-block;
+    clear: both;
     font-family: 'Poiret One', cursive;
     font-size: 1.7em;
     /*    background-color: blueviolet;*/
     padding: 10px 0px 10px 0px;
     border-bottom: 2px solid black;
     margin-left: 55%;
+
 }
 
+.annoyingheader h3 {
+    display: block;
+    margin-right: 30%;
+}
 
 /*Anchors*/
 
@@ -66,11 +76,22 @@ a:visited {
 
 a:active {}
 
+.textleft a,
+.textright a {
+    color: rgba(128, 128, 128, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.textleft a:visited,
+.textright a:visited {
+    color: black;
+}
+
 .wrapper {
     width: 100%;
     /*    margin: 20px auto;*/
-
-
 
 }
 
@@ -150,7 +171,7 @@ main {
 
 .textleft p,
 .textleft ul {
-
+    clear: both;
     float: left;
     max-width: 45%;
     padding-right: 5%;
@@ -184,6 +205,7 @@ h4 {
 
 .textright p,
 .textright ul {
+    
     clear: right;
     float: right;
     padding-left: 2.5%;
@@ -193,7 +215,9 @@ h4 {
 
 }
 
+
 .imgleft img {
+    clear: left;
     float: left;
     padding-left: 5%;
     max-width: 40%;
@@ -256,6 +280,8 @@ footer p {
     .textright p,
     .textright ul {
         max-width: 90%;
+        float: none;
+        padding-left: 5%;
     }
 
 
@@ -271,12 +297,9 @@ footer p {
 
 
     p,
-    .textright ul {
+    .textright ul,
+    .textleft ul {
         font-size: 0.8em;
-    }
-
-    .textleft p {
-        max-width: 90%;
     }
 
     .imgright img {
@@ -284,7 +307,7 @@ footer p {
         max-width: 90%;
     }
 
-    .textright p,
+    .textleft p .textright p,
     .textright ul {
         max-width: 90%;
     }
